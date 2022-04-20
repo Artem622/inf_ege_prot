@@ -1,0 +1,11 @@
+for i in range(100,1000):
+    j=str(i)
+    a=int(j[0])
+    b=int(j[1])
+    c=int(j[2])
+    ab=a*b
+    bc=b*c
+    mm=max(ab,bc)
+    mim=min(ab,bc)
+    if str(mim)+str(mm)=='621':
+        print(i)
