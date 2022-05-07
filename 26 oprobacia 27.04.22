@@ -1,0 +1,25 @@
+f=open("C:\\Users\\Artem\\Downloads\\opr26.txt")
+n=int(f.readline())
+A=[]
+maxrazn=0
+for i in range(n):
+    a,b=f.readline().split()
+    A.append((int(a),int(b)))
+A.sort()
+A.reverse()
+for j in range(len(A)-1):
+    r1=A[j][0]
+    r2=A[j+1][0]
+    m1=A[j][1]
+    m2=A[j+1][1]
+    if r1==r2:
+        razn=abs(m1-m2)
+        maxrazn=max(maxrazn,razn)
+print(maxrazn-1)
+for j in range(len(A)-1):
+    r1=A[j][0]
+    r2=A[j+1][0]
+    m1=A[j][1]
+    m2=A[j+1][1]
+    if abs(m1-m2)==maxrazn:
+        print(r1,r2)
