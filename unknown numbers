@@ -1,0 +1,11 @@
+# #неизвестность по цифрам
+# for a in range(1,30):
+#     for b in range(1,30):
+#         for c in range(1,30):
+#             x='0'+'1'*a+'2'*b+'3'*c+'0'
+#             while not('00') in x:
+#                 x=x.replace('01','21022')
+#                 x=x.replace('02','310')
+#                 x=x.replace('03','230112')
+#                 if x.count('1')==96 and x.count('2')==36 and x.count('3')==80:
+#                     print(a+b+c+2)
