@@ -1,0 +1,7 @@
+def newvodka(x,base):
+    sys = '0123456789ABC'
+    s=''
+    while x>0:
+        s=sys[x%base]+s
+        x=x//base
+    return s
